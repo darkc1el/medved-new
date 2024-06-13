@@ -71,6 +71,28 @@
       @apply border-border;
     }
     body {
-      @apply bg-background text-foreground;
+      @apply bg-black text-[#F8F8F8];
     }
   }
+html {
+  font-size: 1vw;
+}
+
+
+.grid-cases {
+  @apply grid;
+  /* grid-template-columns: 2fr 1fr
+  1fr 1fr 1fr
+  1fr 2fr; */
+  grid-template-rows: 22.5rem 16.25rem 22.5rem;
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 3vw;
+  }
+  .grid-cases {
+  grid-template-rows: repeat(7,13rem);
+
+  }
+}
